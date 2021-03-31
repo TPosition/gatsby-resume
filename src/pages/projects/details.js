@@ -1,10 +1,8 @@
 import React from "react"
 import { Row, Col, Container, Image, Carousel } from "react-bootstrap"
-import { FaFacebook, FaGithub } from 'react-icons/fa';
 import { Timeline, Tag } from 'antd';
 import { TagsOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import _ from "lodash"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -29,10 +27,16 @@ const projectTemplate = (props) => {
                                 return <Tag key={key0 + "" + index}><TagsOutlined /> {key0}</Tag>
                             })}
                         </Row>
+                        <Row>
+                            <Col>
+                                <span className={projectInfo.url ? null : "d-none"}>Demo:&emsp; <a target="_blank" href={projectInfo.url}>{projectInfo.url}</a></span><br />
+                                <span className={projectInfo.github ? null : "d-none"}>Github:&ensp; <a target="_blank" href={projectInfo.github}> {projectInfo.github}</a></span><br /><br />
+                            </Col>
+                        </Row>
                         <Carousel className="bg-black-transparent mb-4">
                             {
                                 projectInfo.images.map((key0) => {
-                                    return <Carousel.Item>
+                                    return <Carousel.Item interval={1000}>
                                         <Image fluid src={key0.src} className="d-block w-100" />
                                         <Carousel.Caption>
                                             <p>{key0.caption}</p>

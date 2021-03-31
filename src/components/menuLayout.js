@@ -1,8 +1,9 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
 import 'antd/dist/antd.css';
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import { menuClick } from "../pages/projects"
+
 
 import Navbar from "./navBar"
 
@@ -19,17 +20,17 @@ const menuLayout = ({ children, pageInfo, menuList = [] }) => {
                         breakpoint="lg"
                         collapsedWidth="0"
                         className="site-layout-background">
-                        <Menu
+                        <Menu onClick={menuClick}
                             mode="inline"
-                            defaultSelectedKeys={['00']}
-                            defaultOpenKeys={['0', '1']}
+                            defaultSelectedKeys={['All']}
+                            defaultOpenKeys={['Types', 'Tags']}
                             style={{ height: '100%', borderRight: 0 }}
                         >
                             {
                                 menuList && menuList.map((key0, index) => {
-                                    return <SubMenu key={index} icon={key0.menuIcon} title={key0.menuTitle}>
+                                    return <SubMenu key={key0.menuTitle} icon={key0.menuIcon} title={key0.menuTitle}>
                                         {key0.menuItem && key0.menuItem.map((key1, jndex) => {
-                                            return <Menu.Item key={index + "" + jndex}>{key1}</Menu.Item>
+                                            return <Menu.Item key={key1}>{key1}</Menu.Item>
                                         })}
                                     </SubMenu>
                                 })

@@ -9,12 +9,12 @@ import { Tag } from 'antd';
 import Layout from "../components/menuLayout"
 import SEO from "../components/seo"
 
-const arrMenuItem = _.concat(_.sortBy(["java", "php", "react", "vue", "bootstrap", "scss", "ant-design"]), ["study purpose"]);
+const arrMenuItem = _.concat(_.sortBy(["java", "php", "react", "vue", "bootstrap", "scss", "ant-design", "others"]), ["study purpose"]);
 
 const menuList = [
   {
     "menuTitle": "Types",
-    "menuItem": ["All", "Website Apps", "Desktop Apps"],
+    "menuItem": ["All", "Website Apps", "Desktop Apps", "Others"],
     "menuIcon": <MenuUnfoldOutlined />
   },
   {
@@ -51,6 +51,33 @@ const projectList = [
     ],
     "description": "A website to calculate live currency and foreign exchange rates that prioritize Malaysia Ringgit.||Although there are many improvement and features should be implemented, yet after I start the project and designed the UI, I found that there are only limited of related API with restrictions under free account.|Thus, I think it is pointless to develop this website so I closed this project."
   },
+  {
+    "id": "infg",
+    "name": "Infographic",
+    "catelog": "Others",
+    "url": "https://drive.google.com/drive/folders/1fSKl65IYqy2dZM3j0uAWfr4BmYaUqsRN?usp=sharing/",
+    "github": null,
+    "tags": ["others"],
+    "milestones": [
+      { "time": "10 March 2021", "event": "Project start" },
+      { "time": "3 Match 2021", "event": "Project end" },
+    ],
+    "images": [
+      {
+        "src": "../images/infg/0.png", "caption": "Kerajaan Melaka sistem pembesar empat lipatan",
+      },
+      {
+        "src": "../images/infg/1.png", "caption": "Pengenalan Tamadun Melayu 1",
+      },
+      {
+        "src": "../images/infg/2.png", "caption": "Pengenalan Tamadun Melayu 2",
+      },
+      {
+        "src": "../images/infg/3.png", "caption": "Pengenalan Tamadun Melayu 3",
+      },
+    ],
+    "description": "Some infographics I created during study period.||They are created for the general study course assignments.|Although it is group assignment, yet I always responsible for whole design andd summerize content."
+  },
   // {
   //   "id": "asdqwe",
   //   "name": "ascewd",
@@ -62,11 +89,20 @@ const projectList = [
   //     { "time": "asdcx", "event": "Project start" },
   //   ],
   //   "images": [
-  //     { "file": "sadasd", "caption": "首頁" },
+  //     { "src": "sadasd", "caption": "Home page" },
   //   ],
   // "description":"sdsadadfzxc"
   // },
 ]
+
+export const menuClick = ({ key }) => {
+
+  var filteredObj = _.filter(projectList, (key0) => {
+    if (key0.catelog === key || key0.tags === key || key === "All")
+      return true
+  });
+  console.log(filteredObj);
+}
 
 const projectPage = () => (
 
@@ -91,7 +127,7 @@ const projectPage = () => (
             </div>
           </Col>
           <Col lg="3">
-            <Image fluid src={key0.images[0].src} />
+            <Image fluid className="mxh-124" src={key0.images[0].src} />
           </Col>
         </Row>
       })}
