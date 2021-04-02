@@ -36,7 +36,7 @@ const projectTemplate = (props) => {
                         <Carousel className="bg-black-transparent mb-4">
                             {
                                 projectInfo.images.map((key0) => {
-                                    return <Carousel.Item interval={1000}>
+                                    return <Carousel.Item interval={2000}>
                                         <Image fluid src={key0.src} className="d-block w-100" />
                                         <Carousel.Caption>
                                             <p>{key0.caption}</p>

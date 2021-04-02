@@ -2,15 +2,16 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { Layout, Menu } from 'antd';
 import 'antd/dist/antd.css';
-import { menuClick } from "../pages/projects"
 
 
 import Navbar from "./navBar"
+import ProjectPage from "../pages/projects"
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
-const menuLayout = ({ children, pageInfo, menuList = [] }) => {
+const MenuLayout = ({ children, pageInfo, menuList = [], menuClick }) => {
+
     return (
         <Layout>
             <Container fluid className="px-0 main bg-silver">
@@ -35,6 +36,7 @@ const menuLayout = ({ children, pageInfo, menuList = [] }) => {
                                     </SubMenu>
                                 })
                             }
+                            {console.log(ProjectPage.str)}
                         </Menu>
                     </Sider>
                     <Container>
@@ -59,4 +61,4 @@ const menuLayout = ({ children, pageInfo, menuList = [] }) => {
     )
 }
 
-export default menuLayout
+export default MenuLayout
