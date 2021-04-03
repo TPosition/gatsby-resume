@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Row, Col, Container, Image, Carousel } from "react-bootstrap"
 import { Timeline, Tag } from 'antd';
 import { TagsOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
+import { Redirect } from '@reach/router'
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -11,7 +12,7 @@ import SEO from "../../components/seo"
 const projectTemplate = (props) => {
     const projectInfo = props.location.state;
     if (!projectInfo) {
-        return window.location.pathname = '/projects'
+        return <Redirect noThrow to="/projects" />
     }
 
     return (
@@ -36,7 +37,7 @@ const projectTemplate = (props) => {
                         <Carousel className="bg-black-transparent mb-4">
                             {
                                 projectInfo.images.map((key0) => {
-                                    return <Carousel.Item interval={2000}>
+                                    return <Carousel.Item interval={3000}>
                                         <Image fluid src={key0.src} className="d-block w-100" />
                                         <Carousel.Caption>
                                             <p>{key0.caption}</p>

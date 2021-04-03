@@ -71,5 +71,166 @@
             }
         ],
         "description": "Some infographics I created during study period.||They are created for the general study course assignments.|Although it is group assignment, yet I always responsible for whole design andd summerize content."
+    },
+    {
+        "id": "ttms",
+        "name": "Timetable Management System",
+        "catelog": "Website Apps",
+        "url": "https://drive.google.com/drive/folders/1FzMNvgscmNDGsJCpRP7ra9CRvy3KquwZ?usp=sharing",
+        "github": "https://github.com/TPosition/TimeTableMgtSys",
+        "tags": [
+            "bootstrap",
+            "php",
+            "study purpose"
+        ],
+        "milestones": [
+            {
+                "time": "Mar 2019",
+                "event": "Project start"
+            },
+            {
+                "time": "Aug 2019",
+                "event": "Project end"
+            }
+        ],
+        "images": [
+            {
+                "src": "../images/ttms/0.png",
+                "caption": "Login as admin"
+            },
+            {
+                "src": "../images/ttms/1.png",
+                "caption": "RECAPTCHA"
+            },
+            {
+                "src": "../images/ttms/2.png",
+                "caption": "Dashboard"
+            },
+            {
+                "src": "../images/ttms/3.png",
+                "caption": "View, edit and delete the timetable of courses"
+            },
+            {
+                "src": "../images/ttms/4.png",
+                "caption": "Insert the timetable of course"
+            },
+            {
+                "src": "../images/ttms/5.png",
+                "caption": "Login as student"
+            },
+            {
+                "src": "../images/ttms/6.png",
+                "caption": "Dashboard of student"
+            },
+            {
+                "src": "../images/ttms/7.png",
+                "caption": "Show the details of timetable based on course and semester in complete version"
+            },
+            {
+                "src": "../images/ttms/8.png",
+                "caption": "Show the details of timetable based on course and semester in simplified version"
+            },
+            {
+                "src": "../images/ttms/9.png",
+                "caption": "Add drop course"
+            },
+            {
+                "src": "../images/ttms/10.png",
+                "caption": "Pop colour plate and drop course button when click on the course"
+            },
+            {
+                "src": "../images/ttms/11.png",
+                "caption": "Recolour course"
+            },
+            {
+                "src": "../images/ttms/12.png",
+                "caption": "Export as Excel"
+            },
+            {
+                "src": "../images/ttms/13.png",
+                "caption": "Export as PDF"
+            },
+            {
+                "src": "../images/ttms/14.png",
+                "caption": "Recolour course in simplified version"
+            }
+        ],
+        "description": "A timetable Management System for Courses, University and Colleague.||Features:|1. Login system with RECAPTCHA|2. Backend management system |3. Complete and simplified version of table |4. Export as pdf and excel |5. Recolour the table |6. Add drop course||Hosting:|hosting with XAMPP||This is my group final year project when I studying diploma at UNIMY.|At the time, my teammates and I have only basic understanding to the use of languages so luckily that even thought we dont have the concept of frameworks and just copy the codes from google and stackoverflow, yet the website still could run fluently and make the features as planned (except profile system).||After this project end, I backed up the codes yet it has too many copies and I could not ensure the uploaded to github one is the latest. It seems impossible to host no matter in local and online again since messy folder structure and I forgot to backup the DB and sql."
+    },
+    {
+        "id": "scbs",
+        "name": "Secondhand Bookstore",
+        "catelog": "Website Apps",
+        "url": "https://drive.google.com/drive/folders/1iTULlBtgvdGSHoPopJmW6kr6TWQ4esZf?usp=sharing",
+        "github": "https://github.com/TPosition/s-cart-seller-adaption",
+        "tags": [
+            "php",
+            "study purpose"
+        ],
+        "milestones": [
+            {
+                "time": "Dec 2020",
+                "event": "Project start"
+            },
+            {
+                "time": "Jan 2021",
+                "event": "Project end"
+            }
+        ],
+        "images": [
+            {
+                "src": "../images/scbs/0.png",
+                "caption": "Home page"
+            },
+            {
+                "src": "../images/scbs/1.png",
+                "caption": "Method to be seller"
+            },
+            {
+                "src": "../images/scbs/2.png",
+                "caption": "Checkout page"
+            },
+            {
+                "src": "../images/scbs/3.png",
+                "caption": "Admin dashboard"
+            }
+        ],
+        "description": "A bookstore management system that develop based on s-cart.||Changes:|1. Added role for seller to make everyone can sell products on platform|- Limit the display of product based on owner in product management|- Limit the access of role|2. Fix product cards size to fit web page|3. Removed unnecessary pages and functions for admin side|4. Adapt buyer pages for books|-banners, product details page's details"
+    },
+    {
+        "id": "cksp",
+        "name": "Cake Shop",
+        "catelog": "Website Apps",
+        "url": null,
+        "github": null,
+        "tags": [
+            "php",
+            "study purpose"
+        ],
+        "milestones": [
+            {
+                "time": "3 March 2018",
+                "event": "Project start"
+            },
+            {
+                "time": "10 March 2018",
+                "event": "Project end"
+            }
+        ],
+        "images": [
+            {
+                "src": "../images/cksp/0.png",
+                "caption": "product List"
+            },
+            {
+                "src": "../images/cksp/1.png",
+                "caption": "Home page and navigation bar"
+            },
+            {
+                "src": "../images/cksp/2.png",
+                "caption": "Homw page and navigation bar"
+            }
+        ],
+        "description": "A pure php website for online cake shop that hosting on XAMPP.||Created at my early days of diploma study for assignment. There are supposed to have more images yet I scare to host it XAMPP again so I just take the iamges from HTML.|Since it just a simple website, terrible folder stucture and large size images so just to show the UI, I kind of like this colour scheme."
     }
 ]

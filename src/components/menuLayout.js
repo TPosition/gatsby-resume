@@ -36,7 +36,6 @@ const MenuLayout = ({ children, pageInfo, menuList = [], menuClick }) => {
                                     </SubMenu>
                                 })
                             }
-                            {console.log(ProjectPage.str)}
                         </Menu>
                     </Sider>
                     <Container>

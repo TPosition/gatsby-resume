@@ -12,7 +12,7 @@ import profile from "../images/profile.png"
 
 const profileInfo = {
   "Name": "Ting Kai Boon",
-  "Birth": "22-12-1998",
+  "Birthday": "22-12-1998",
   "Education": "Bachelor's",
   "Email": "ok.kai.mail@gmail.com"
 }
