@@ -146,7 +146,7 @@ const IndexPage = () => (
                 Object.keys(profileInfo).map(function (key) { return <tr><td class="font-weight-bold text-right">{key}</td><td>{profileInfo[key]}</td></tr> })
               }
 
-              <tr><td class="font-weight-bold text-right">Resume</td><td><a href="" target="_blank" download>PDF</a></td></tr>
+              <tr><td class="font-weight-bold text-right">Resume</td><td><a href="https://drive.google.com/file/d/1isdKdONuToCn8POO8TkYJ0jDxZ0wb3vl/view?usp=sharing" target="_blank">PDF</a></td></tr>
             </table>
           </Row>
         </Col>
