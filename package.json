@@ -7,6 +7,7 @@
   "dependencies": {
     "antd": "^4.15.0",
     "bootstrap": "^4.3.1",
+    "domino": "^2.1.6",
     "gatsby": "^2.3.34",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.0.29",
