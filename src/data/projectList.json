@@ -1,5 +1,44 @@
 [
     {
+        "id": "gbrs",
+        "name": "gatsby-resume",
+        "catelog": "Website Apps",
+        "url": "https://ting-space.web.app/",
+        "github": "https://github.com/TPosition/gatsby-resume",
+        "tags": [
+            "ant-design",
+            "react",
+            "bootstrap",
+            "scss",
+            "study purpose"
+        ],
+        "milestones": [
+            {
+                "time": "Mar 2021",
+                "event": "Project start"
+            },
+            {
+                "time": "3 Apr 2021",
+                "event": "Deployment"
+            }
+        ],
+        "images": [
+            {
+                "src": "../images/gbrs/0.png",
+                "caption": "Home page"
+            },
+            {
+                "src": "../images/gbrs/1.png",
+                "caption": "Project list"
+            },
+            {
+                "src": "../images/gbrs/2.png",
+                "caption": "Project details"
+            }
+        ],
+        "description": "A personalized resume website that built with gatsby.||I was inspired by a senior programmer's resume to build this project and I have refers so many resume websites yet 'only' his resume is clean and good looking. So it is awkward that my website layout and colour scheme is so similar to him, making me introspect and struggling about rights on law and moral and difference of reference and plagarism. I think it is time to figure out and develop my personal design style for commercial use. ||This project is completed under the helps of another senior web developer, he makes me fully understand the quote |  'If I can see higher, it is because I stand on the shoulders of giants.  '| I used to keep self-study since I am not familiar with any programmer before I know him and I thought I am good enough to solve the problems even thought it usually takes long time to solve the problems. Thus, luckily that he could guide me in this probject, shorten the development time and optimize the website. ||I learned a lot from both of him, such as retrieve of array of object, deployment, lodash and styling frameworks. I do not think that I can know these and compelete this project if I solo this project. |I asked him about the idea of resume website. He recommanded me to use the gatsby (react framework), although it has a lot advanced usage yet it simplifies the routing so it would be enough.|Another impressing point is he still could give the clear answer even my questios are confusing and misleading that I even not sure what I have asked. From this, I found that anxiety causes my thinking messy, spend hours to figure out the solution until I ask for helps. To avoid the situation, I think it is good to take a shower first or place a doll and tell it the problems, sometimes they works.||Through this projects, I can feel that my skills are improved dramatically."
+    },
+    {
         "id": "myrc",
         "name": "MYR-Currency",
         "catelog": "Website Apps",
