@@ -1,9 +1,4 @@
-# Gatsby React Bootstrap Starter
+A personalized resume website
 
-A GatsbyJS starter that includes
-
-- react-bootstrap
-- react-icons
-- sticky on scroll navbar
-- SASS compiler
-- basic layout
+### Improvement
+1. allow open project details in new tab
